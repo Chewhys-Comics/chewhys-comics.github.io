@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Subscription Form | CodingNepal</title>
+    <title>Subscription Form | Chewhys Comics</title>
     <link rel="stylesheet" href="css/subscription.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
 <body>
   <input type="checkbox" id="toggle">
-  <label for="toggle" class="show-btn">Show Modal</label>
+  <label for="toggle" class="show-btn">Subscribe</label>
   <div class="wrapper">
     <label for="toggle">
     <i class="cancel-icon fas fa-times"></i>
