@@ -10,22 +10,22 @@ function sendEmail() {
     const hostBodyMessage = `Full Name: ${fullName.value}<br> Email: ${email.value} <br> Phone Number: ${phone.value} <br> Message: ${message.value}`;
     const senderBodyMessage = `The following messages has been sent to Chewhys Comics successfully:<br> Full Name: ${fullName.value}<br> Email: ${email.value} <br> Phone Number: ${phone.value} <br> Message: ${message.value}`;
     Email.send({
-        SecureToken: "72d67feb-2e4b-482e-8012-3e734eda521d",
+        SecureToken: "8a7f1c08-be83-44e8-ba94-d03a6e295a85",
         Host : "smtp.elasticemail.com",
-        Username : "stephanieyao.stu@gmail.com",
-        Password : "907712F1E363A831BECB8B7CC15331CF1BEE",
-        To : 'stephanieyao.stu@gmail.com',
-        From : "stephanieyao.stu@gmail.com",
+        Username : "chewhyscomics@gmail.com",
+        Password : "38439EFC2A446113ADB155E4B7ACF0442E5C",
+        To : 'chewhyscomics@gmail.com',
+        From : "chewhyscomics@gmail.com",
         Subject : subject.value,
         Body : hostBodyMessage
     })
     Email.send({
-        SecureToken: "72d67feb-2e4b-482e-8012-3e734eda521d",
+        SecureToken: "8a7f1c08-be83-44e8-ba94-d03a6e295a85",
         Host : "smtp.elasticemail.com",
-        Username : "stephanieyao.stu@gmail.com",
-        Password : "907712F1E363A831BECB8B7CC15331CF1BEE",
+        Username : "chewhyscomics@gmail.com",
+        Password : "38439EFC2A446113ADB155E4B7ACF0442E5C",
         To : `${email.value}`,
-        From : "stephanieyao.stu@gmail.com",
+        From : "chewhyscomics@gmail.com",
         Subject : subject.value,
         Body : senderBodyMessage
     })
