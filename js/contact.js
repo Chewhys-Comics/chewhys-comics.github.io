@@ -10,9 +10,9 @@ function sendEmail() {
     const bodyMessage = 'Full Name: ${fullName.value}<br> Email: ${email.value} <br> Phone Number: ${phone.value} <br> Message: ${message.value}';
     Email.send({
         SecureToken: "72d67feb-2e4b-482e-8012-3e734eda521d",
-        // Host : "smtp.elasticemail.com",
-        // Username : "stephanieyao.stu@gmail.com",
-        // Password : "907712F1E363A831BECB8B7CC15331CF1BEE",
+        Host : "smtp.elasticemail.com",
+        Username : "stephanieyao.stu@gmail.com",
+        Password : "907712F1E363A831BECB8B7CC15331CF1BEE",
         To : 'stephanieyao.stu@gmail.com',
         From : "stephanieyao.stu@gmail.com",
         Subject : subject.value,
@@ -72,7 +72,7 @@ function checkEmail() {
             errorTxtEmail.innerText = "Enter a valid email address";
         }
         else {
-            errorTxtEmail.innerText = "Email Adress can't be blank"
+            errorTxtEmail.innerText = "Email Adress can't be blank";
         }
     }
     else {
@@ -85,7 +85,7 @@ form.addEventListener("submit",(e)=> {
     e.preventDefault();
     checkInputs();
     
-    if (!fullName.classList.contains("error") &&!email.classList.contains("error") && !phone.classList.contains("error") && !subject.classList.contains("error") &&!message.classList.contains("error") ){
+    if (!fullName.classList.contains("error") &&!email.classList.contains("error") && !phone.classList.contains("error") && !subject.classList.contains("error") && !message.classList.contains("error") ){
         sendEmail();
 
         form.reset();
