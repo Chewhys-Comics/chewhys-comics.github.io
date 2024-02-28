@@ -7,7 +7,7 @@ const message = document.getElementById("message")
 
 
 function sendEmail() {
-    const bodyMessage = 'Full Name: ${fullName.value}<br> Email: ${email.value} <br> Phone Number: ${phone.value} <br> Message: ${message.value}';
+    const bodyMessage = `Full Name: ${fullName.value}<br> Email: ${email.value} <br> Phone Number: ${phone.value} <br> Message: ${message.value}`;
     Email.send({
         SecureToken: "72d67feb-2e4b-482e-8012-3e734eda521d",
         Host : "smtp.elasticemail.com",
