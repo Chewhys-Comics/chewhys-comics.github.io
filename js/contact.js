@@ -7,7 +7,8 @@ const message = document.getElementById("message")
 
 
 function sendEmail() {
-    const bodyMessage = `Full Name: ${fullName.value}<br> Email: ${email.value} <br> Phone Number: ${phone.value} <br> Message: ${message.value}`;
+    const hostBodyMessage = `Full Name: ${fullName.value}<br> Email: ${email.value} <br> Phone Number: ${phone.value} <br> Message: ${message.value}`;
+    const senderBodyMessage = `The following messages has been sent to Chewhys Comics successfully:<br> Full Name: ${fullName.value}<br> Email: ${email.value} <br> Phone Number: ${phone.value} <br> Message: ${message.value}`;
     Email.send({
         SecureToken: "72d67feb-2e4b-482e-8012-3e734eda521d",
         Host : "smtp.elasticemail.com",
@@ -16,8 +17,19 @@ function sendEmail() {
         To : 'stephanieyao.stu@gmail.com',
         From : "stephanieyao.stu@gmail.com",
         Subject : subject.value,
-        Body : bodyMessage
-    }).then(
+        Body : hostBodyMessage
+    })
+    Email.send({
+        SecureToken: "72d67feb-2e4b-482e-8012-3e734eda521d",
+        Host : "smtp.elasticemail.com",
+        Username : "stephanieyao.stu@gmail.com",
+        Password : "907712F1E363A831BECB8B7CC15331CF1BEE",
+        To : `${email.value}`,
+        From : "stephanieyao.stu@gmail.com",
+        Subject : subject.value,
+        Body : senderBodyMessage
+    })
+    .then(
       message => {
         if (message == "OK"){
             Swal.fire({
@@ -62,7 +74,7 @@ function checkInputs(){
 
 
 function checkEmail() {
-    const emailRegex=/^([a-z\d\.-]+)@([a-z\d-]+)\.([a-z]{2,3})(\.[a-z]{2,3})?$/;
+    const emailRegex=/^([a-z\d\.-_]+)@([a-z\d-]+)\.([a-z]{2,3})(\.[a-z]{2,3})?$/;
     const errorTxtEmail = document.querySelector(".error-txt.email");
     if (!email.value.match(emailRegex)){
         email.classList.add("error");
