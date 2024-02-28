@@ -1,24 +1,4 @@
-<link href="css/subscription.css" media="screen" rel="stylesheet" type="text/css" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-    $("#subscribeBtn").click(function(){
-        $.ajax({
-            url: "subscription.php",
-            type: "POST",
-            success: function(response){
-                // Handle success response if needed
-                console.log("Subscription successful!");
-            },
-            error: function(xhr, status, error){
-                // Handle error response if needed
-                console.error("Error subscribing:", error);
-            }
-        });
-    });
-});
-</script>
-</head>
 <body>
 
 <div class="menu">
