@@ -3,9 +3,9 @@
 
 <head>
   <title>Contact - Chewhys Comics</title>
-  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="css/frame.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/contact-frame.css" media="screen" rel="stylesheet" type="text/css" />
   <link href="css/controls.css" media="screen" rel="stylesheet" type="text/css" />
   <link href="css/custom.css" media="screen" rel="stylesheet" type="text/css" />
   <link href="css/contact.css" rel="stylesheet"/>
@@ -25,7 +25,8 @@
 </head>
 
 <body>
-  <div class="content-container">
+  <div class="menu-container"></div>
+<div class="content-container">
     <div class="banner";>
         <div class="banner-table flex-column" style="background-color: rgba(0, 0, 0, 0.5);">
           <div class="flex-row">
@@ -39,48 +40,48 @@
       <div class="content-table flex-column">
         <div class="flex-row">
           <div class="flex-item flex-column">
-            <section class="contact">
-                <form action="#">
-                    <div class="input-box">
-                        <div class="input-field field">
-                            <input type="text" placeholder="Full Name" id="name" 
-                            class="item" autocomplete="off">
-                            <div class="error-txt">Full Name can't be blank</div>
-                        </div>
-                        <div class="input-field field">
-                            <input type="text" placeholder="Email Address" id="email" 
-                            class="item" autocomplete="off">
-                            <div class="error-txt email">Email can't be blank</div>
-                        </div>
-                    </div>
+  <section class="contact">
+    <form action="#">
+        <div class="input-box">
+            <div class="input-field field">
+                <input type="text" placeholder="Full Name" id="name" 
+                class="item" autocomplete="off">
+                <div class="error-txt">Full Name can't be blank</div>
+            </div>
+            <div class="input-field field">
+                <input type="text" placeholder="Email Address" id="email" 
+                class="item" autocomplete="off">
+                <div class="error-txt email">Email can't be blank</div>
+            </div>
+        </div>
 
-                    <div class="input-box">
-                        <div class="input-field field">
-                            <input type="text" placeholder="Phone Number" id="phone" 
-                            class="item" autocomplete="off">
-                            <div class="error-txt">Phone Number can't be blank</div>
-                        </div>
-                        <div class="input-field field">
-                            <input type="text" placeholder="Subject" id="subject" 
-                            class="item" autocomplete="off">
-                            <div class="error-txt">Subject can't be blank</div>
-                        </div>
-                    </div>
+        <div class="input-box">
+            <div class="input-field field">
+                <input type="text" placeholder="Phone Number" id="phone" 
+                class="item" autocomplete="off">
+                <div class="error-txt">Phone Number can't be blank</div>
+            </div>
+            <div class="input-field field">
+                <input type="text" placeholder="Subject" id="subject" 
+                class="item" autocomplete="off">
+                <div class="error-txt">Subject can't be blank</div>
+            </div>
+        </div>
 
-                    <div class="textarea-field field">
-                        <textarea name="" id="message" cols="30" rows="10" placeholder="Your Message" class="item" autocomplete="off"></textarea>
-                        <div class="error-txt">Message can't be blank</div>
-                    </div>
-                    
-                    <button type="submit"> Send Message</button>
-                </form>
-            </section>
+        <div class="textarea-field field">
+            <textarea name="" id="message" cols="30" rows="10" placeholder="Your Message" class="item" autocomplete="off"></textarea>
+            <div class="error-txt">Message can't be blank</div>
+        </div>
+        
+        <button type="submit"> Send Message</button>
+    </form>
+</section>            
 
 
-            <script src="https://smtpjs.com/v3/smtp.js"></script>
-            <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-            <script src="js/contact.js"></script>
-          </div>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="js/contact.js"></script>
+</div>
         </div>
       </div>
     </div>

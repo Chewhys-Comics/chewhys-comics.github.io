@@ -5,9 +5,6 @@
   <title>Contact - Chewhys Comics</title>
   <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="css/frame.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="css/controls.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="css/custom.css" media="screen" rel="stylesheet" type="text/css" />
   <link href="css/subscribe.css" rel="stylesheet"/>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
@@ -25,48 +22,29 @@
 </head>
 
 <body>
-  <div class="content-container">
-    <div class="banner";>
-        <div class="banner-table flex-column" style="background-color: rgba(0, 0, 0, 0.5);">
-          <div class="flex-row">
-          <div class="flex-item flex-column">
-            <h1 class="add-top-margin-small">Subscribe to Receive Latest Update</h1>
-          </div>
+  <section class="contact">
+
+    <form action="#" name="submit-to-google-sheet">
+        <div class="input-box">
+            <div class="input-field field">
+                <input type="text" placeholder="Email Address" id="email" 
+                class="item" autocomplete="off" name="email">
+                <div class="error-txt email">Email can't be blank</div>
+            </div>
+            <div class="input-field field">
+                <input type="text" placeholder="Full Name" id="name" 
+                class="item" autocomplete="off" name="name">
+                <div class="error-txt">Full Name can't be blank</div>
+            </div>
         </div>
-      </div>
-    </div>
-    <div class="content">
-      <div class="content-table flex-column">
-        <div class="flex-row">
-          <div class="flex-item flex-column">
-            <section class="contact">
-                <form action="#" name="submit-to-google-sheet">
-                    <div class="input-box">
-                        <div class="input-field field">
-                            <input type="text" placeholder="Email Address" id="email" 
-                            class="item" autocomplete="off" name="email">
-                            <div class="error-txt email">Email can't be blank</div>
-                        </div>
-                        <div class="input-field field">
-                            <input type="text" placeholder="Full Name" id="name" 
-                            class="item" autocomplete="off" name="name">
-                            <div class="error-txt">Full Name can't be blank</div>
-                        </div>
-                    </div>
-                    <button type="submit">Subscribe</button>
-                </form>
-            </section>
+        <button type="submit">Subscribe</button>
+    </form>
+  </section>
 
 
-            <script src="https://smtpjs.com/v3/smtp.js"></script>
-            <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-            <script src="js/subscribe.js"></script>
-          </div>
-        </div>
-      </div>
-      
-    </div>
-    <div class="footer-container"></div>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="js/subscribe.js"></script>
 </body>
 
 </html>

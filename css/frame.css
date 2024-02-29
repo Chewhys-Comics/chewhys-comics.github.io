@@ -332,10 +332,6 @@ hr {
 }
 
 .flex-column {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: flex-start;
   align-items: stretch;
   align-content: stretch;
   box-sizing: border-box;
@@ -343,8 +339,6 @@ hr {
 
 .flex-row-space-between {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   align-content: stretch;

@@ -57,7 +57,28 @@
             <p class="text">
               On this webpage, you can freely access the lecture notes, replays, and event photos from our past activities.
             </p>
-            
+            <section class="contact">
+              <h1>Subscribe to Access the Latest Update!</h1>
+              <form action="#" name="submit-to-google-sheet">
+                  <div class="input-box">
+                      <div class="input-field field">
+                          <input type="text" placeholder="Email Address" id="email" 
+                          class="item" autocomplete="off" name="email">
+                          <div class="error-txt email">Email can't be blank</div>
+                      </div>
+                      <div class="input-field field">
+                          <input type="text" placeholder="Full Name" id="name" 
+                          class="item" autocomplete="off" name="name">
+                          <div class="error-txt">Full Name can't be blank</div>
+                      </div>
+                  </div>
+                  <button type="submit">Subscribe</button>
+              </form>
+          </section>
+
+          <script src="https://smtpjs.com/v3/smtp.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+          <script src="js/subscribe.js"></script>
             </div>
           </div>
         </div>

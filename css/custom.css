@@ -72,3 +72,81 @@ h3 {
     color: rgba(0, 0, 0, 0.8);
   }
 }
+
+/* below for subscription */
+
+
+.contact form{
+  width: 600px;
+  text-align: center;
+}
+
+form .input-box{
+  display: flex;
+  justify-content: space-between;
+}
+
+/* 
+.input-box .input-field{
+  width: 100%;
+} */
+
+.field .item{
+  width: 100%;
+  padding:18px;
+  background: transparent;
+  border: 2px solid #0ef;
+  outline: none;
+  border-radius: 6px;
+  font-size: 16px;
+  color: #000;
+  margin: 12px 0;
+}
+
+.field.error .item{
+  border-color: #d93025;
+}
+
+.field .item::placeholder{
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.field .error-txt {
+  font-size: 14.5px;
+  color: #d93025;
+  text-align: left;
+  margin: -5px 0 10px;
+  display: none;
+}
+
+.field.error .error-txt{
+  display: block;
+}
+
+form .textarea-field .item{
+  resize: none;
+}
+
+form .textarea-field .error-txt {
+  margin-top: -20px;
+}
+
+form button {
+  padding: 12px 32px;
+  background: #0ef;
+  border: none;
+  outline:none;
+  border-radius: 6px;
+  box-shadow: 0 0 10px #0ef;
+  font-size: 16px;
+  color: #333;
+  letter-spacing: 1px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 12px;
+  transition: .5s;
+}
+
+form button:hover {
+  box-shadow: none;
+}
