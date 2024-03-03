@@ -1,3 +1,3 @@
-# Website for MMM '24
+# Website for Chewhys Comics
 
-https://www.mmm2024.org/
+This is the website for Chewhys Comics (chewhys-comics.github.io).
