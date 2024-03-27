@@ -40,7 +40,7 @@ form .input-box{
   width: 100%;
   padding:18px;
   background: transparent;
-  border: 2px solid #0ef;
+  border: 2px solid #2f28c6;
   outline: none;
   border-radius: 6px;
   font-size: 16px;
@@ -78,11 +78,11 @@ form .textarea-field .error-txt {
 
 form button {
   padding: 12px 32px;
-  background: #0ef;
+  background: #2f28c6;
   border: none;
   outline:none;
   border-radius: 6px;
-  box-shadow: 0 0 10px #0ef;
+  box-shadow: 0 0 10px #2f28c6;
   font-size: 16px;
   color: #333;
   letter-spacing: 1px;

@@ -1,0 +1,152 @@
+/*************************************************************************
+ * Your custom CSS file
+ *************************************************************************/
+
+ .menu .menu-items .dropdown i {
+    color: #000000;
+  }
+  
+  .menu .menu-items>a,
+  .menu .menu-items>div {
+    color: rgb(0, 0, 0, 0.8);
+  }
+  
+  .menu .menu-items>a:hover,
+  .menu .menu-items>div:hover {
+    color: rgb(0, 0, 0);
+  }
+  
+  .menu-container {
+    background-color: white;
+  }
+  
+  .banner {
+    background-color: #20242D;
+  }
+  
+  h2,
+  h3 {
+    color: #2f28c6;
+  }
+  
+  .custom-dropdown {
+    width: 240px;
+  }
+  
+  .custom-textbox {
+    width: 240px;
+  }
+  
+  #dialog-1,
+  #dialog-2,
+  #dialog-3,
+  #dialog-4,
+  #share-dialog {
+    display: none;
+  }
+  
+  #share-url {
+    width: 100%;
+    -webkit-touch-callout: default !important;
+    -webkit-user-select: text !important;
+    -khtml-user-select: text !important;
+    -moz-user-select: text !important;
+    -ms-user-select: text !important;
+    user-select: text !important;
+  }
+  
+  #share-url-copy-prompt {
+    display: none;
+    color: #007bff;
+  }
+  
+  @media screen and (max-width: 1050px) {
+  
+    .menu .menu-items>a,
+    .menu .menu-items>div {
+      border-top: 1px solid rgba(0, 0, 0, 0.5);
+    }
+  
+    .menu .menu-items .dropdown .dropdown-content a {
+      border-top: 1px solid rgba(0, 0, 0, 0.5);
+      color: rgba(0, 0, 0, 0.8);
+    }
+  }
+  
+  /* below for subscription */
+  
+  
+  .contact form{
+    width: 600px;
+    text-align: center;
+  }
+  
+  form .input-box{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /* 
+  .input-box .input-field{
+    width: 100%;
+  } */
+  
+  .field .item{
+    width: 100%;
+    padding:18px;
+    background: transparent;
+    border: 2px solid #0ef;
+    outline: none;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #000;
+    margin: 12px 0;
+  }
+  
+  .field.error .item{
+    border-color: #d93025;
+  }
+  
+  .field .item::placeholder{
+    color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .field .error-txt {
+    font-size: 14.5px;
+    color: #d93025;
+    text-align: left;
+    margin: -5px 0 10px;
+    display: none;
+  }
+  
+  .field.error .error-txt{
+    display: block;
+  }
+  
+  form .textarea-field .item{
+    resize: none;
+  }
+  
+  form .textarea-field .error-txt {
+    margin-top: -20px;
+  }
+  
+  form button {
+    padding: 12px 32px;
+    background: #0ef;
+    border: none;
+    outline:none;
+    border-radius: 6px;
+    box-shadow: 0 0 10px #0ef;
+    font-size: 16px;
+    color: #333;
+    letter-spacing: 1px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: .5s;
+  }
+  
+  form button:hover {
+    box-shadow: none;
+  }

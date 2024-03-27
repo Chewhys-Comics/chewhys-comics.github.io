@@ -21,12 +21,12 @@
 }
 
 .banner {
-  background-color: rgb(96, 91, 211);
+  background-color: #2f28c6;
 }
 
 h2,
 h3 {
-  color: rgb(96, 91, 211);
+  color: #2f28c6;
 }
 
 .custom-dropdown {
