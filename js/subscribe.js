@@ -22,16 +22,6 @@ function sendEmail() {
         Host : "smtp.elasticemail.com",
         Username : "chewhyscomics@gmail.com",
         Password : "38439EFC2A446113ADB155E4B7ACF0442E5C",
-        To : 'chewhyscomics@gmail.com',
-        From : "chewhyscomics@gmail.com",
-        Subject : `${fullName.value}`+" has successfully subscribed to Chewhys Comics.",
-        Body : hostBodyMessage
-    })
-    Email.send({
-        SecureToken: "8a7f1c08-be83-44e8-ba94-d03a6e295a85",
-        Host : "smtp.elasticemail.com",
-        Username : "chewhyscomics@gmail.com",
-        Password : "38439EFC2A446113ADB155E4B7ACF0442E5C",
         To : `${email.value}`,
         From : "chewhyscomics@gmail.com",
         Subject : "Thanks for Subscribing to Chewhys Comics!",

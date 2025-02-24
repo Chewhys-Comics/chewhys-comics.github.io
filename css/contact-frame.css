@@ -21,7 +21,7 @@
  
  h1 {
    font-size: 40px;
-   color: #333333;
+   color: #FFFFFF;
    margin: 30px 0 0 0;
    padding: 0;
    font-weight: bold;
@@ -254,7 +254,7 @@
  .banner h3,
  .banner p,
  .banner span {
-   color: white;
+   color: #333;
  }
  
  .banner .flex-item {

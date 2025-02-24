@@ -7,14 +7,21 @@
   font-family: 'Poppins', sans-serif;
 }
 
-body {
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background: #1f242d;
+html, body {
+  margin: 0;
+  padding: 0;
+  /* Ensures no default spacing affects the body size */
 }
 
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Covers full viewport height (content can expand) */
+  width: 100%; /* Full width */
+  box-sizing: border-box; /* Includes padding/border in width/height */
+}
+ 
 .contact form{
   width: 600px;
   text-align: center;
@@ -37,7 +44,7 @@ form .input-box{
   outline: none;
   border-radius: 6px;
   font-size: 16px;
-  color: #ededed;
+  color: #919191;
   margin: 12px 0;
 }
 
@@ -46,7 +53,7 @@ form .input-box{
 }
 
 .field .item::placeholder{
-  color: rgba(255,255,255,.3);
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .field .error-txt {
